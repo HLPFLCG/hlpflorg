@@ -1,12 +1,15 @@
+// next.config.js
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export',
-  basePath: '/hlpflorg', // 👈 Required for GitHub Pages
-  assetPrefix: '/hlpflorg', // 👈 Ensures assets load correctly
+  output: 'export',                 // Enables static export
+  distDir: 'docs',                  // Outputs the build into the 'docs' folder for GitHub Pages
   reactStrictMode: true,
   images: {
-    unoptimized: true, // Required for `next export` with images
+    unoptimized: true              // Required for static export to work without Next.js Image Optimization
   },
+  // Redirects are not supported in static export (they get ignored)
+  // We'll keep them here for potential future use on a non-static host
   async redirects() {
     return [
       {
@@ -30,7 +33,7 @@ const nextConfig = {
         permanent: true,
       },
     ];
-  },
+  }
 };
 
 module.exports = nextConfig;
