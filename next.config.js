@@ -1,15 +1,12 @@
-// next.config.js
-
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: 'export',
   reactStrictMode: true,
-
-  // ✅ Disable image optimization for static export
   images: {
-    unoptimized: true,
+    unoptimized: true, // Required for next/image on static exports
   },
-
+  basePath: '/hlpflorg', // 👈 REQUIRED for GitHub Pages
+  assetPrefix: '/hlpflorg',
   async redirects() {
     return [
       {

@@ -1,1 +1,0 @@
-(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[364],{5395:(n,u,_)=>{"use strict";_.r(u),_.d(u,{default:()=>t});var e=_(4232);function t(){return(0,e.useEffect)(()=>{window.location.href="/book"},[]),null}},6892:(n,u,_)=>{(window.__NEXT_P=window.__NEXT_P||[]).push(["/contact",function(){return _(5395)}])}},n=>{n.O(0,[636,593,792],()=>n(n.s=6892)),_N_E=n.O()}]);

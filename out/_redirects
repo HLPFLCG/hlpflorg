@@ -1,6 +1,0 @@
-// public/_redirects (to be created in /public folder, no extension)
-/*
-/vip        https://hlpfl.vip       301!
-/shop       https://hlpfl.store    301!
-/book       https://calendly.com/founder-hlpfl/30min 301!
-*/
