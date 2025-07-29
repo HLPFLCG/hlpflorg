@@ -1,13 +1,16 @@
-// next.config.js
 /** @type {import('next').NextConfig} */
+
+// Check if we’re deploying to GitHub Pages
+const isGitHubPages = process.env.DEPLOY_TARGET === 'GH_PAGES';
+
 const nextConfig = {
   output: 'export',
   reactStrictMode: true,
   images: {
-    unoptimized: true,
+    unoptimized: true, // Required for next/image to work in static export
   },
-  basePath: '/hlpflorg',
-  assetPrefix: '/hlpflorg',
+  basePath: isGitHubPages ? '/hlpflorg' : '',
+  assetPrefix: isGitHubPages ? '/hlpflorg/' : '',
 
   async redirects() {
     return [
