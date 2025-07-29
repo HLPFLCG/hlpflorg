@@ -1,0 +1,1 @@
+(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[345],{6404:(n,u,_)=>{"use strict";_.r(u),_.d(u,{default:()=>t});var e=_(4232);function t(){return(0,e.useEffect)(()=>{window.location.href="https://hlpfl.vip"},[]),null}},9034:(n,u,_)=>{(window.__NEXT_P=window.__NEXT_P||[]).push(["/vip",function(){return _(6404)}])}},n=>{n.O(0,[636,593,792],()=>n(n.s=9034)),_N_E=n.O()}]);

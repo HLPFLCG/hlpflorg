@@ -1,12 +1,11 @@
-/** @type {import('next').NextConfig} */
 const nextConfig = {
   output: 'export',
+  basePath: '/hlpflorg', // 👈 This fixes GitHub Pages
+  assetPrefix: '/hlpflorg', // 👈 Makes all CSS/JS/image paths correct
   reactStrictMode: true,
   images: {
-    unoptimized: true, // Required for next/image on static exports
+    unoptimized: true,
   },
-  basePath: '/hlpflorg', // 👈 REQUIRED for GitHub Pages
-  assetPrefix: '/hlpflorg',
   async redirects() {
     return [
       {
