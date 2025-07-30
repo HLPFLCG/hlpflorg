@@ -1,5 +1,5 @@
 // pages/_app.js
-import '@/styles/style.css';
+import '../styles/style.css'
 import { useRouter } from 'next/router';
 import { useEffect } from 'react';
 
