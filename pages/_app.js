@@ -1,5 +1,6 @@
 // pages/_app.js
-import '../styles/style.css'
+// pages/_app.js
+import '@/public/css/style.css'; // if using `@` alias
 import { useRouter } from 'next/router';
 import { useEffect } from 'react';
 

@@ -17,9 +17,17 @@ export default function Header() {
             <li><Link href="/about">About</Link></li>
             <li><Link href="/services">Services</Link></li>
             <li><Link href="/red-flag-guide">Red Flag Guide</Link></li>
-            <li><Link href="/shop">Shop</Link></li>
-            <li><Link href="/vip">VIP</Link></li>
-            <li><Link href="/book" className="btn btn--primary">Let&apos;s talk</Link></li>
+            <li>
+              <a href="https://hlpfl.store" target="_blank" rel="noopener noreferrer">Shop</a>
+            </li>
+            <li>
+              <a href="https://hlpfl.vip" target="_blank" rel="noopener noreferrer">VIP</a>
+            </li>
+            <li>
+              <a href="https://calendly.com/founder-hlpfl/30min" className="btn btn--primary" target="_blank" rel="noopener noreferrer">
+               Let&apos;s talk
+              </a>
+            </li>
           </ul>
         </nav>
       </div>
